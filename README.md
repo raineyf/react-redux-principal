@@ -12,7 +12,7 @@ This is a calculator for simple interest/total principal. It takes 3 inputs- sta
 
 Clone or download this project locally and run `npm start` to run this at port `3000`.
 
-Additionally, this is published at [raineyf.github.io/react-redux-calculator](raineyf.github.io/react-redux-calculator).
+Additionally, this is published at [https://www.raineyfleming.com/react-redux-principal/](https://www.raineyfleming.com/react-redux-principal/).
 
 ## On accessibility:
 

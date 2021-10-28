@@ -1,4 +1,4 @@
-# react-redux-calculator
+# react-redux-principal
 
 This is a calculator for simple interest/total principal. It takes 3 inputs- starting principal, interest rate, and years. The calculator then outputs the total principal with interest over the specified timeframe.
 

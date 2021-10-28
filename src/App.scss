@@ -32,3 +32,9 @@ form {
         }
     }
 }
+
+input:focus,
+button:focus {
+    outline: dotted black;
+    outline-offset: 5px;
+}

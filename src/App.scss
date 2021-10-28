@@ -1,0 +1,34 @@
+@import "./utils/normalize.css";
+
+.app-container {
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        label {
+            margin: 0 0 5px;
+        }
+        input {
+            width: calc(100% - 40px);
+            margin: 0 auto;
+        }
+    }
+    button {
+        background: #158915;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

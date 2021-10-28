@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import Form from "./components/Form.js";
+import { useSelector } from "react-redux";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const principal = useSelector((state) => state.principal.value);
+    return (
+        <div className="app-container">
+            <h1>Simple Interest Calculator</h1>
+            <Form label="Calculate Your Total Principal" />
+            <div aria-live="polite">
+                {isNaN(principal.calculation) ? (
+                    <p>
+                        Please ensure that all fields only contain numeric
+                        characters
+                    </p>
+                ) : (
+                    <p>Calculated Principal: ${principal.calculation}</p>
+                )}
+            </div>
+        </div>
+    );
 }
 
 export default App;
